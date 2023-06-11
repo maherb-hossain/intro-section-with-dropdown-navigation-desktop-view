@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/**************************************** DEFAULT CSS STARTS ****************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: auto;
+    width:  1350px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+/***************************************************************** DEFAULT CSS ENDS ***************************************/
+
+/********************************************************************* NAV STARTS *******************************************************/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header nav .menuA > img{
+    margin: 15px 35px;
+} */
+header nav ul > li{
+    margin: 20px 25px;
+    position: relative;
+}
+header nav ul li a{
+    color: hsl(0, 0%, 41%);
+    transition: 0.3s;
+}
+header nav ul li:hover > a{
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+/********************************************* SUBMENU STARTS *********************************************/
+nav ul li .down{
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    transition: 0.4s;
+}
+nav ul li:hover .down{
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li .up{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+} 
+nav ul li:hover .up{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li ul{
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+nav ul li .features{
+    width: 180px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -60px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 98%);
+
+}
+nav ul li .features li{
+    margin: 20px 10px;
+    
+}
+nav ul li .features li  img{
+   padding: 0px 15px;
+    
+}
+nav ul li .company{
+    width: 110px;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 40px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 98%);
+}
+nav ul li .company li{
+    margin: 20px 10px;
+}
+/************************************************************** SUBMENU ENDS *********************************************************/
+
+nav .menuB ul .reg{
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    margin: 10px 30px;
+    border-radius: 15px;
+    transition: 0.3ms;
+}
+nav .menuB ul .reg:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+/******************************************************* NAV ENDS **************************************************************/
+
+/*************************************************** BANNER STARTS *******************************************/
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 160px;
+}
+section .bannerCnt{
+    width: 45%;
+}
+section .bannerCnt h1{
+    font-size: 65px;
+    margin-top: 92px;
+    margin-left: 16px;
+}
+section .bannerCnt p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    line-height: 28px;
+    margin: 40px 16px;
+}
+section .bannerCnt a{
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    margin-left: 16px;
+    
+    transition: 0.3s;
+}
+section .bannerCnt a:hover{
+    color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 41%) ;
+    background-color:hsl(0, 0%, 98%) ;
+    font-weight: 700;
+}
+section .bannerCnt .partner{
+    cursor: pointer;
+    margin-top: 170px;
+}
+section .bannerCnt .partner img{
+    padding-left: 20px;
+}
+section .bannerbg{
+    width: 55%;
+    margin: 0px auto;
+}
+section .bannerbg img{
+    display: inline-block;
+    width: 450px;
+    height: 600px;
+    margin: 25px 120px 25px 100px;
+}
+
+/****************************************** BANNER ENDS *************************************************/
+
+/*************************************** FOOTER STARTS *********************************************/
+
+footer{
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+footer a{
+    color:hsl(0, 0%, 41%) ;
+    font-weight: 700px;
+}
+footer a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 700px;
+}
+
+/*************************************************************** FOOTER ENDS *******************************************/
+
